@@ -5,7 +5,7 @@ const passport = require('passport')
 
 //@desc auth with goolde
 // @route GET /auth/google
-router.get('/google', passport.authenticate('google', {scope: ['profile']}))
+router.get('/auth/google', passport.authenticate('google', {scope: ['profile']}))
 
 //@desc google oauth callback
 // @route GET /auth/google/callback
